@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/src/assets/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mind Clear</title>
+
+    <!-- Tailwind CDN & Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              paper: '#181615',
+              card: '#22201e',
+              parchment: '#f4efe6',
+              ink: '#e8e2d5',
+              accent: '#d4a373',
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-paper text-ink">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
